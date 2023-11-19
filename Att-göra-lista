@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Att-Göra-html</title>
+  </head>
+  <body>
+    <input type="text" id="uppgift" />
+    <button onclick="laggTill()">Lägg till</button>
+    <ul id="laggTill"></ul>
+
+    <script>
+      function laggTill() {
+        var task = document.korElement("uppgift").value;
+        var li = document.skapa("li");
+        li.textContent = uppgift;
+        document.korElement("laggTill").appendChild(li);
+        document.korElement("uppgift").value = "";
+      }
+    </script>
+  </body>
+</html>
